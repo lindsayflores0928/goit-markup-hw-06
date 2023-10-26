@@ -1,0 +1,485 @@
+:root {
+    --IRIS: #4D5AE5;
+    --NAVY-BLUE: #2E2F42;
+    --WHITE: #FFF;
+    --SLATE: #434455;
+    --CLOUD: #F4F4FD;
+    --CORNFLORES: #E7E9FC;
+    --OCEAN: #404bbf;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+}
+
+/*.list*/
+.menu {
+    list-style: none;
+    padding-left: 156;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.bg-dark {
+    background-color: var(--NAVY-BLUE);
+}
+
+.logo {
+    text-transform: uppercase;
+    font-family: Raleway;
+    font-weight: 800;
+    line-height: 1.3;
+}
+
+.logo:hover .logo-web {
+    color: green;
+}
+
+.logo .logo-web:hover {
+    color: var(--iris);
+}
+
+.logo-web {
+    color: var(--IRIS);
+}
+
+.link {
+    text-decoration: none;
+}
+
+/*.section-title {
+    text-align: center;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 2.5;
+    letter-spacing: 0.72px;
+    text-transform: capitalize;
+    color: var(--NAVY-BLUE)
+}*/
+
+.section-title {
+    color: var(--NAVY-BLUE, #2e2f42);
+    text-align: center;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 2.5;
+    /* 111.111% */
+    letter-spacing: 0.72px;
+    text-transform: capitalize;
+}
+
+
+.p-dark {
+    color: var(--SLATE, #434455);
+    /*text-align: center;*/
+    line-height: 1.5;
+    letter-spacing: 0.32px;
+}
+
+/*.about h3,
+.team h3*/
+
+/*team-name*/
+.about-team {
+    color: var(--NAVY-BLUE, #2E2F42);
+    /*text-align: center;*/
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.4px;
+    margin-top: 0;
+}
+
+.container {
+    width: 1440px;
+}
+
+.d-flex {
+    display: flex;
+}
+
+/*.section*/
+.about {
+    padding-top: 120px;
+    padding-bottom: 120px;
+    padding-left: 156;
+    padding-right: 156;
+}
+
+.what-we-do ul,
+.about ul,
+.team ul {
+    justify-content: center;
+}
+
+.what-we-do {
+    justify-content: center;
+}
+
+/*HEADER*/
+
+.header {
+    justify-content: space-around;
+    align-items: center;
+}
+
+.header .d-flex {
+    align-items: center;
+}
+
+.header .list {
+    gap: 40px;
+}
+
+.logo {
+    margin-right: 76px;
+}
+
+.logo-studio-nav {
+    color: var(--NAVY-BLUE);
+}
+
+/*about-icon*/
+.menu-icons {
+    background-color: var(--CLOUD);
+    text-align: center;
+    padding: 24px 0;
+}
+
+.nav-link {
+    color: var(--NAVY-BLUE);
+    line-height: 1.5;
+    font-weight: 500;
+    letter-spacing: 0.32px;
+}
+
+.nav-link:hover,
+.nav-link:focus {
+    color: var(--ocean);
+}
+
+.active {
+    color: var(--OCEAN)
+}
+
+.active::after {
+    content: " ";
+    display: block;
+    height: 4px;
+    width: 100%;
+    border-radius: 2px;
+    background-color: var(--IRIS);
+    position: relative;
+    top: 15px;
+} 
+
+.link.contacts {
+    color: var(--SLATE, #434455);
+    line-height: 1.5;
+    letter-spacing: 0.32px;
+}
+
+/* HERO SECTION*/
+
+.hero {
+    padding-top: 188px;
+    padding-bottom: 188px;
+    text-align: center;
+    background-image: linear-gradient(rgba(46, 47, 66, 0.70), rgba(46, 47, 66, 0.70)), url(..//images/office.jpg);
+    background-size: cover;
+    position: relative;
+}
+
+.hero-text {
+    color: var(--WHITE);
+    text-align: center;
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 60px;
+    letter-spacing: 1.12px;
+    text-transform: uppercase;
+}
+
+.hero-btn {
+    background-color: var(--IRIS);
+    color: var(--WHITE);
+    border: none;
+    border-radius: 4px;
+    padding: 16px 32px;
+}
+
+
+.hero-btn:hover {
+    cursor: pointer;
+    background-color: var(--OCEAN);
+}
+
+/* TEAM SECTION */
+
+.team {
+    gap: 24px;
+    text-align: center;
+    font-weight: 700;
+    line-height: 1.5;
+    /* 111.111% */
+    letter-spacing: 0.72px;
+    text-transform: capitalize;
+}
+
+.team img {
+    display: block;
+}
+
+.team-name {
+    color: var(--NAVY-BLUE, #2e2f42);
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.4px;
+}
+
+/*team-socials*/
+.menu-team-socials {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+}
+
+/*team-socials-icon*/
+.socials-items-links {
+    background-color: var(--IRIS);
+    height: 40px;
+    width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    fill: var(--WHITE)
+}
+
+/*menu-caption*/
+.menu-team {
+    background-color: var(--WHITE);
+    padding: 32px 0ox;
+}
+
+/*CUSTOMERS*/
+
+.customer-icon {
+    border: 1px solid #8e8f99;
+    padding: 16px 32px;
+}
+
+.customer-icon svg {
+    fill: #8e8f99;
+}
+
+.customer-icon:hover,
+.customer-icon:focus {
+    border-color: var(--iris);
+}
+
+.customer-icon:hover svg,
+.customer-icon:focus svg {
+    fill: var(--iris);
+}
+
+.customers-title {
+    align-items: center;
+}
+
+/*FOOTER*/
+
+.logo-studio-footer {
+    color: var(--CLOUD)
+}
+
+.footer {
+    padding: 120px;
+}
+
+.footer-text {
+    color: var(--CLOUD);
+    line-height: 1.5;
+    letter-spacing: 0.32px;
+}
+
+.footer-main {
+    display: flex;
+    column-gap: 120px;
+    align-items: center;
+    padding-left: 156;
+}
+
+.menu-team-socials {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 100px;
+}
+
+/* PORTFOLIO STYLING */
+
+.projects ul {
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.projects li {
+    width: 360px;
+}
+
+.projects li img {
+    width: 100%;
+    display: block;
+}
+
+.projects {
+    padding-top: 69px;
+    padding-bottom: 120px;
+}
+
+.container {
+    padding-top: 72px;
+}
+
+.projects-buttons-a {
+    /* text-align: center; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 24px;
+}
+.projects-buttons {
+    color: var(--IRIS);
+    border-radius: 4px;
+    border: 1px solid var(--CORNFLOWER);
+    background: var(--CLOUD);
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0.64px;
+    transition: 1s;
+}
+.projects-buttons:hover,
+.projects-buttons:focus {
+    color: var(--WHITE);
+    background-color: var(--IRIS);
+    transition: 0s;
+}
+
+.container .menu {
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 32px;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .menu-cont img {
+    width: 100%;
+    display: block;
+}
+
+.container .menu-cont {
+    width: 25%;
+    border: 1px solid var(--CORNFLOWER);
+}
+
+.project-caption {
+    flex-direction: column;
+    padding: 32px 16px;
+    background: var(--WHITE);
+}
+
+.p-card {
+    color: var(--NAVY-BLUE);
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0.4px;
+    margin-bottom: 8px;
+}
+
+.container {
+    overflow: hidden;
+}
+
+.p-menu-cont {
+    position: relative;
+    overflow: hidden;
+}
+
+.project-caption-a {
+    position: absolute;
+    background-color: rgba(77, 90, 229, 1);
+    color: white;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transform: translateY(100%);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.menu-cont:hover .project-caption-a {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.project-caption-a p {
+    padding: 40px 32px;
+}
+
+/*modal*/
+
+.backdrop {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal {
+    width: 408px;
+    height: 584px;
+    background-color: white;
+    border-radius: 4px;
+    padding: 24px;
+}
+
+.is-hidden {
+    pointer-events: none;
+    opacity: 0;
+}
+
+.modal-close-btn {
+    border-radius: 100%;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    background-color: white;
+    width: 30px;
+    height: 30px;
+    color: var(--ocean);
+    margin-left: auto;
+    display: block;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-close-btn:hover {
+    fill: currentColor;
+    border: 1px solid currentColor;
+}
+
+
