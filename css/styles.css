@@ -610,7 +610,7 @@ body
 .soc-med-link:hover,
 .soc-med-link:focus
 {
-    background-color: var(--Ocean);
+    background-color: var(--Green);
 }
 
 .soc-med-icon
@@ -697,6 +697,7 @@ body
     flex-wrap: wrap;
     justify-content: center;
     gap: 48px 24px;
+    margin-left: 169px;
 }
 
 .project-item
